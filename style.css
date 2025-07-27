@@ -1,0 +1,346 @@
+*{/* Universal box-sizing for better layout control */
+    box-sizing: border-box;/* Ensures padding and border are included in element's total width and height */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+}
+
+/* Body styles */
+body {
+    background-image: url("download (4).jpg"); /* Background image for the body */
+    font-family: 'Segoe UI', sans-serif; /* Font style for the text */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Background color for the main container */
+.background-color_body {
+    background-color: #ddc96dd7; /* Light background color */
+    max-width: 100%;
+    width: 100%; /* Full width */
+    height: auto; /* Automatic height */
+    position: relative;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(255, 255, 255, 0.76); /* Semi-transparent white background */
+    max-width: 1100px; /* Maximum width for the header */
+    margin: auto; /* Centering the header */
+    padding: 20px 0; /* Padding for header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+/* Main title styles */
+header h1 {
+    color: rgb(59, 94, 59); /* Title color */
+    text-align: center; /* Center-align text */
+    padding-bottom: 20px; /* Bottom padding */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Removes default bullet points */
+}
+
+nav ul li {
+    display: inline; /* Displays items in a single line */
+    margin: 0 13px; /* Margin for spacing */
+    margin-left: 30px; /* Left margin for spacing */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: rgb(59, 94, 59); /* Link color */
+    font-weight: bold; /* Bold text for links */
+}
+
+nav ul li a:hover {
+    color: rgba(14, 114, 14, 0.534); /* Change color on hover */
+}
+
+/* Styles for Happiness section */
+.Happiness_blooms_from_within {
+    background-image: url(t2x902uaztgt.jpeg); /* Background image for this section */
+    width: 90%; /* Width of the section */
+    height: 650px; /* Fixed height */
+    color: black; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 200px 20px; /* Padding for the section */
+    margin-top: 0; /* No margin on top */
+}
+
+/* Styles for Happiness content */
+.Happiness {
+    background-color: #999c9c91; /* Background color */
+    width: 90%; /* Width of the content */
+    height: 300px; /* Height of the content */
+    padding-top: 50px; /* Top padding */
+    margin-left: 50px; /* Left margin */
+    border-radius: 30px; /* Rounded corners */
+}
+
+/* Heading styles for Happiness section */
+.Happiness_blooms_from_within h1 {
+    font-size: 3rem; /* Font size */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Paragraph styles in Happiness section */
+.Happiness_blooms_from_within p {
+    font-size: 1.2rem; /* Font size */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Button styles in Happiness section */
+.Happiness_blooms_from_within button {
+    background-color: rgb(59, 94, 59); /* Button background color */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Button hover effect */
+.Happiness_blooms_from_within button:hover {
+    background-color: rgba(14, 114, 14, 0.534); /* Change color on hover */
+}
+
+/* Link styles in buttons */
+.Happiness_blooms_from_within button a {
+    text-decoration: none; /* No underline */
+    color: black; /* Link color */
+}
+
+/* Section styles */
+section {
+    background-color: rgba(255, 255, 255, 0.568); /* Semi-transparent background color */
+    padding: 30px 20px; /* Padding for sections */
+    max-width: 1100px; /* Maximum width for sections */
+    margin: auto; /* Centering the section */
+}
+
+/* Heading styles */
+h2 {
+    color: rgb(59, 94, 59); /* Heading color */
+    margin-bottom: 15px; /* Bottom margin */
+}
+
+/* Image and video styles */
+section img, video {
+    width: 100%; /* Full width for images and videos */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Flexbox for flower rows */
+.flower-row {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Wrap items to the next line */
+    gap: 20px; /* Gap between items */
+    justify-content: space-between; /* Space between items */
+}
+
+/* Individual flower row item styles */
+.flower-row > div {
+    flex: 1; /* Flex grow */
+    min-width: 180px; /* Minimum width */
+}
+
+/* About Flowers section styles */
+#About_Flowers {
+    background-color: #ddc96d69; /* Background color */
+    padding: 15px; /* Padding */
+    width: 60%; /* Width */
+    height: auto; /* Automatic height */
+}
+
+/* Heading styles in About Flowers */
+#About_Flowers h3 {
+    color: rgb(59, 94, 59); /* Heading color */
+}
+
+/* Button styles in About Flowers */
+#About_FLowers , button{
+    background-color: rgb(59, 94, 59); /* Background color */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Link styles in buttons */
+#About_Flowers, button, a {
+    border-radius: 15px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    color: black; /* Text color */
+}
+
+/* Image grid styles */
+.img {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* Image styles in grid */
+.img img {
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    margin: 0 15px; /* Margin for spacing */
+    margin-top: 20px; /* Top margin */
+    object-fit: cover; /* Cover the area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* video styles in grid */
+.img video {
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    margin: 0 15px; /* Margin for spacing */
+    margin-top: 20px; /* Top margin */
+    object-fit: cover; /* Cover the area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Flower and span styles */
+.flower, span, button {
+    padding-left: 50px; /* Left padding */
+}
+
+/* Flexbox for video and text */
+._flower {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    width: 100%; /* Full width */
+    height: 400px; /* Fixed height */
+    margin-top: 15px; /* Top margin */
+}
+
+/* Background image for flower section */
+.flower {
+    background-image: url('photo_2025-07-23_07-15-39.jpg'); /* Background image */
+    background-repeat: no-repeat; /* No repeat */
+    background-size: cover; /* Cover the area */
+    text-align: center; /* Center-align text */
+    padding: 50px 40px; /* Padding */
+}
+
+/* Benefits section styles */
+.ul {
+    background-color: #ddc96d69; /* background color */
+    padding: 20px 90px; /* distance */
+    width: 100%; /* full width */
+    height: auto; /* auto height */
+    margin-top: 15px; /* top distance */
+}
+
+/* Heading styles in Benefits section */
+.ul h2 {
+    color: rgb(59, 94, 59); /* title color */
+    margin: 0; /* unmargined */
+}
+
+/* Form styles */
+form {
+    width: 350px; /* form width */
+    margin: 20px; /* margin */
+    padding: 10px; /* internal spacing */
+    border-radius: 5px; /* rounded corners */
+}
+
+/* Form input styles */
+form input {
+    padding: 10px; /* internal spacing */
+    margin: 5px 0; /* vertical spacing */
+    width: 100%; /* full width */
+}
+
+/* Contact and table field styles */
+.contact-table {
+    display: flex; /* Flexbox layout */
+    gap: 5px; /* spacing between contact form and table */
+}
+
+/* Table styles */
+table {
+    width: 80%; /* full width of table */
+    border-collapse: collapse; /* Merge margins */
+}
+
+/* Table cell styles */
+th, td {
+    padding: 10px; /* spacing for cells */
+    text-align: left; /* Text alignment to the left */
+    border: 1px solid rgb(59, 94, 59); /* border color */
+}
+
+/* Table column header styles */
+th {
+    background-color: rgb(59, 94, 59); /* Column header background color */
+    color: white; /* Column header text color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.671); /* Semi-transparent background */
+    padding: 20px; /* internal spacing */
+    max-width: 1100px; /* Max width for footer */
+    margin: auto; /* Center the footer */
+    color: rgb(59, 94, 59); /* text color */
+    text-align: center; /* Text alignment in the middle */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+@media (max-width: 768px){
+    header h1{
+        font-size: 2.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin:  10px 0;
+    }
+
+    .Happiness_blooms_from_within {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .flower-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    ._flower{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ul{
+        padding: 20px 10px;
+    }
+
+    form{
+        width: 100%;
+        margin: 0;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    th, td{
+        font-size: 0.9rem;
+    }
+
+    footer{
+        padding: 10px;
+    }
+}
+
+
